@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/food"
+
+    tools:context=".MainActivity">
+    <include
+        android:id="@+id/main_page_toolbar"
+        layout="@layout/app_bar">
+    </include>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:hint="Enter city"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/Cuisine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:hint="Enter cusine"/>
+
+        <Button
+            android:id="@+id/Explore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_red_dark"
+            android:drawablePadding="5dp"
+
+            android:hint="name"
+            android:inputType="textPersonName"
+            android:text="Explore"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+</RelativeLayout>
